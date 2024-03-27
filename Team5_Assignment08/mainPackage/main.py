@@ -10,14 +10,13 @@
 # Anything else that's relevant:
 
 # imports (ex: from functionPackage.functions import *)
-from dataClassPackage.dataClass import Data
+from dataClassPackage.data import Data
 
 if __name__ == "__main__": 
-    '''
+
     # Instantiate an object of type Data
     myData =  Data()
     # Invoke the connect method and store what it returns in another variable
     myCursor = myData.Connect()
     
     myCursor.execute() # Submit a query to the SQL Server instance and store the results in the cursor object
-    '''

@@ -1,4 +1,4 @@
-# dataClass.oy
+# dataClassPackage.oy
 # The Data Class
 
 # imports
