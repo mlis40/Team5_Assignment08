@@ -19,13 +19,13 @@ if __name__ == "__main__": #Entry point
     myData =  Data()
     # Invoke the connect method and store what it returns in another variable
     # Matt worked on the SQL Statement
-    myCursor = myData.Connect()
+    myCursor = myData.Connect() 
     
     myCursor.execute('SELECT DISTINCT tBrand.Brand, tProduct.ManufacturerID FROM  tBrand INNER JOIN tProduct ON tBrand.BrandID = tProduct.BrandID INNER JOIN tManufacturer ON tProduct.ManufacturerID = tManufacturer.ManufacturerID WHERE (tProduct.ManufacturerID = 13)') # Submit a query to the SQL Server instance and store the results in the cursor object
 
 
     # Harrison worked on writing out the sentence for the output
-    print("Coca-Cola manufactures all of these brands: ") #
+    print("Coca-Cola manufactures all of these brands: ") #Statement in front of data
     for row in myCursor: 
         print(row[0]); #Prints just the first column of data from the database, excluding the brand ID from the results 
         

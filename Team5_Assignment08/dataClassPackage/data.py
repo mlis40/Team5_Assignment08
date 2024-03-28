@@ -19,7 +19,7 @@ class Data:
         Connect to the database and create a cursor
         @return: the cursor object
         '''
-        #Connection to the UC database 
+        #Connection to the UC database  
         conn = pyodbc.connect('Driver={SQL Server};'
                               'Server=lcb-sql.uccob.uc.edu\\nicholdw;'
                               'Database=GroceryStoreSimulator;'
