@@ -1,6 +1,6 @@
 # dataClassPackage.oy
 # Name: Matthew Lisowsky and Harrison Moore (Team5)
-# email: lisowsmd@mail.uc.edu and 
+# email: lisowsmd@mail.uc.edu and Moorehc@mail.uc.edu
 # Assignment Number: Assignment 08
 # Due Date: 3/28/2024
 # Course/Section: IS4010-002
@@ -10,7 +10,7 @@
 # Anything else that's relevant:
 
 # imports (ex: from functionPackage.functions import *)
-import pyodbc
+import pyodbc 
 
 # Harrison worked in the DataClass to get us connected to the database
 class Data:
@@ -19,6 +19,7 @@ class Data:
         Connect to the database and create a cursor
         @return: the cursor object
         '''
+        #Connection to the UC database  
         conn = pyodbc.connect('Driver={SQL Server};'
                               'Server=lcb-sql.uccob.uc.edu\\nicholdw;'
                               'Database=GroceryStoreSimulator;'
